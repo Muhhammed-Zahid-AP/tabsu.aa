@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETPLEX ACADEMY</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: lightgrey;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 90%;
+            max-width: 400px;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .note {
+            font-size: 12px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>NETPLEX ACADEMY</h2>
+    <form id="registrationForm">
+        <!-- Existing Fields -->
+        <div class="form-group">
+            <label for="firstName"><i class="fas fa-user"></i> First Name:</label>
+            <input type="text" id="firstName" name="firstName" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName"><i class="fas fa-user"></i> Last Name:</label>
+            <input type="text" id="lastName" name="lastName" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="Email"><i class="fas fa-envelope"></i>  Email:</label>
+            <input type="email" id="Email" name="Email" class="form-control" required>
+        </div>
+        <!-- Phone Number Icon Change -->
+        <div class="form-group">
+            <label for="Phonenumber"><i class="fas fa-phone"></i> Phone Number:</label>
+            <input type="text" id="Phonenumber" name="Phonenumber" class="form-control" required>
+        </div>
+        
+        
+       
+        <!-- New Fields -->
+        <div class="form-group">
+            <label for="city"><i class="fas fa-city"></i> City:</label>
+            <input type="text" id="city" name="city" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="state"><i class="fas fa-map-marker-alt"></i> State:</label>
+            <input type="text" id="state" name="state" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="postalCode/Zipcode"><i class="fas fa-mail-bulk"></i> Postal Code/Zip Code:</label>
+            <input type="text" id="postalCode" name="postalCode" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="Country"><i class="fas fa-map-marker-alt"></i> Country:</label>
+            <input type="text" id="Country" name="state" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dob"><i class="fas fa-calendar-alt"></i> Date of Birth:</label>
+            <input type="date" id="dob" name="dob" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label><i class="fas fa-venus-mars"></i> Gender:</label>
+            <div>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="major"><i class="fas fa-graduation-cap"></i> Major/Field of Study:</label>
+            <select id="major" name="major" class="form-control" required>
+                <option value="">Select One</option>
+                <option value="BSC">BSC</option>
+                <option value="BCOM">BCOM</option>
+                <option value="DIPLOMA">DIPLOMA</option>
+                <option value="BTECH">BTECH</option>
+                <option value="OTHER">OTHER</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="postGrad"><i class="fas fa-university"></i> Post Graduation/College Name:</label>
+            <input type="text" id="postGrad" name="postGrad" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="interestField"><i class="fas fa-briefcase"></i> Interested Field:</label>
+            <select id="interestField" name="interestField" class="form-control" required>
+                <option value="">Select One</option>
+                <option value="Full Stack Development">Full Stack Development</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Business Analyst">Business Analyst</option>
+                <option value="Software Testing">Software Testing</option>
+                <option value="Mern Stack Development">Mern Stack Development</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Accounting">Accounting</option>
+                <option value="Auditing">Auditing</option>
+                <option value="Office Administration">Office Administration</option>
+                <option value="Graphic Designing">Graphic Designing</option>
+                <option value="Human Resource">Human Resource</option>
+                <option value="Business Development">Business Development</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="internshipPosition"><i class="fas fa-briefcase"></i> Internship Position:</label>
+            <input type="text" id="internshipPosition" name="internshipPosition" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="skillsExperience"><i class="fas fa-star"></i> Skills/Experience:</label>
+            <input type="text" id="skillsExperience" name="skillsExperience" class="form-control" required>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Submit</button>
+    </form>
+</div>
+<!-- Font Awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
